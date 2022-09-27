@@ -6,6 +6,9 @@ public class Main {
         int result = 0;
         result = substract(value1, value2);
         System.out.println("Result Substraction:" + result);
+
+        System.out.println("Result Substraction TEST:" + substract(10, 3));
+
         result = addition(value1, value2);
         System.out.println("Result Addition:" + result);
         result = divide(value1, value2);
@@ -14,6 +17,10 @@ public class Main {
         System.out.println("Result Multi:" + result);
         result = modulo(value1, value2);
         System.out.println("Result Modulo:" + result);
+        //Aufgabe2
+        //Rückgabe als String nicht int
+        System.out.println("Result AddString:" + addString(value1, value2));
+
     }
 
     public static int substract(int value1, int value2) {
@@ -30,6 +37,10 @@ public class Main {
     }
     public static int modulo(int value1, int value2) {
         return value1%value2;
+    }
+
+    public static String addString(int value1, int value2) {
+        return "Summe :" + (value1 + value2);
     }
 }
 
