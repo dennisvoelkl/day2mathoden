@@ -20,7 +20,7 @@ public class Main {
         //Aufgabe2
         //Rückgabe als String nicht int
         System.out.println("Result AddString:" + addString(value1, value2));
-        //
+
     }
 
     public static int substract(int value1, int value2) {
