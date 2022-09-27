@@ -20,6 +20,8 @@ public class Main {
         //Aufgabe2
         //Rückgabe als String nicht int
         System.out.println("Result AddString:" + addString(value1, value2));
+        // Bonusaufgabe
+        System.out.println("Größer gleich\n" + checkParameter(value1, value2));
 
     }
 
@@ -41,6 +43,17 @@ public class Main {
 
     public static String addString(int value1, int value2) {
         return "Summe :" + (value1 + value2);
+    }
+
+    public static String checkParameter(int value1, int value2){
+        int wert = 100;
+        if (value1 > wert){
+            if (value2 > wert){
+                return "Beide Werte größer 100";
+            }
+            return "Wert 1 größer 100, Wert 2 nicht";
+        }
+        return "Kein Wert > 100";
     }
 }
 
